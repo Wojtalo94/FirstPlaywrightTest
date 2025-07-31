@@ -37,9 +37,9 @@ Dodatkowe rzeczy:
 
 
 Linki warte uwagi:
-https://github.com/microsoft/playwright – oficjalne repozytorium na GitHub,
-https://playwright.dev/python/docs/intro/ – oficjalna dokumentacja,
-https://playwright.dev/python/docs/test-runners/ – Pytest plugin.
+- https://github.com/microsoft/playwright – oficjalne repozytorium na GitHub,
+- https://playwright.dev/python/docs/intro/ – oficjalna dokumentacja,
+- https://playwright.dev/python/docs/test-runners/ – Pytest plugin.
 
 
 
