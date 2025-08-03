@@ -40,6 +40,7 @@ Linki warte uwagi:
 - https://playwright.dev/python/docs/intro/ – oficjalna dokumentacja,
 - https://playwright.dev/python/docs/test-runners/ – Pytest plugin.
 - https://the-internet.herokuapp.com - strona do ćwiczeń testów automatycznych
+- https://www.youtube.com/watch?v=y8zY14HHiPI&list=PLP5_A7hnY1Tggph0F0cRqf5iyyZuIBXYC oraz https://www.youtube.com/watch?v=VZ5LU8vHT0s&list=PLhW3qG5bs-L8WcAa9cfXaqGe0-Cq85y4X - lekcje z playwright dużo bardziej rozwinięte
 - BRAKUJE tutaj linku z testami automatycznymi dla python+playwright
 
 Teoria:
