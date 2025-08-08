@@ -25,6 +25,14 @@ def test_link_playwright_documentation(set_up) -> None:
     # expect jako parametr oczekuje albo page, albo locator albo APIResponse, expect jest playwrightowym assertem, ma on w sobie nie tylko waita, ale także odpytuje wiele razy w ciągu paru sekund o ten elementy który oczekujemy
     (expect(page.get_by_role("link",
                              name="Write tests using web first assertions, page fixtures and locators")).to_be_visible())
+    # natomiast tutaj sam expect nie jest dobry, bo nie będzie logów, lepiej dać:
+    try:
+        (expect(page.get_by_role("link",
+                             name="Write tests using web first assertions, page fixtures and locators")).to_be_visible())
+    except AssertionError as e:
+        self._logger.error(f"Wrong link: {e}. Actual link: {page.url}")
+        raise
+
     
     # aby assert pythonowy zadziałał, trzeba zrobić waita na stronie, aż się ona załaduje, tutaj przychodzi nam z pomocą poniższy kod, który czeka aż strona się załaduje, nie trzeba używać parametrów:
     #page.wait_for_load_state
