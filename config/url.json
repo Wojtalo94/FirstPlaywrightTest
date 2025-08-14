@@ -1,0 +1,10 @@
+{
+  "testing": {
+    "main_url": "https:/xxxxx.com/",
+    "sign_out_url": "https://xxxxx.com/logout"
+  },
+  "production": {
+    "main_url": "https:/xxxxx.com/",
+    "sign_out_url": "https://xxxxx.com/logout"
+  }
+}
