@@ -1,2 +1,2 @@
-headless: false
-slow_mo: 1500
+headless: true
+slow_mo: 250
