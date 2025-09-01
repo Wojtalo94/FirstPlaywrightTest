@@ -95,10 +95,9 @@ def login_once_per_module(request, set_up, account_data, main_url):
     if not getattr(module, "_is_logged_in", False):
 
         page = set_up
-        sso = SSOPage(page)
-        dynpack = DynpackPage(page)
-        dynpack.open_main_page(main_url)
-        sso.sign_in_to_dynpack(account_data, main_url)
+        main_page = MainPage(page)
+        main_page.open_main_page(main_url)
+        main_page.sign_in_to_main_page(account_data, main_url)
         # we indicate that we are already logged in to the module
         setattr(module, "_is_logged_in", True)
 
@@ -116,8 +115,8 @@ def ensure_return_to_main(set_up, main_url, request):
 
     page = set_up
     try:
-        dynpack = DynpackPage(page)
-        dynpack.open_main_page(main_url)
+        main_page = MainPage(page)
+        main_page.open_main_page(main_url)
     except Exception:
         logger.exception("Failed to open main page during post-test cleanup for %s", request.node.name)
 
