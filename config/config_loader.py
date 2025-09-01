@@ -11,6 +11,7 @@ def load_test_config(path="config/browser_config.yaml"):
 
 def load_account(path: str = "config/account.json",
                  profile: str = "default",
+                 account: str = "itaka",
                  role: str = "administrator") -> Tuple[str, str]:
     """
     Returns (username, password) from the account.json file.
