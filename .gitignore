@@ -2,3 +2,4 @@ __pycache__/
 .pytest_cache/
 .venv/
 logs/logs_web.log
+report.html
