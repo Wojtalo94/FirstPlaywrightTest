@@ -1,18 +1,10 @@
 import pytest
 import logging
 from typing import Dict
+from pages.main_page import mainPage
 from playwright.sync_api import Playwright
 from helpers.bad_responses import BadResponses
 from config.config_loader import load_account, load_test_config, load_url_value
-
-
-logging.basicConfig(filename="logs/logs_web.log",
-                    filemode='a',
-                    format='%(asctime)s.%(msecs)03d [%(levelname)s][%(name)s] %(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S',
-                    level=logging.INFO)
-
-logger = logging.getLogger(__name__)
 
 
 logging.basicConfig(filename="logs/logs_web.log",
