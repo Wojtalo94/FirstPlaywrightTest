@@ -5,6 +5,9 @@ class MainPage:
     def __init__(self, page):
         self.page = page
         self._logger = logging.getLogger("MainPage")
+        self._username_field = page.locator('input[name="username"]')
+        self._password_field = page.locator('input[name="password"]')
+        self._log_in_button = page.get_by_role("button", name="Log in")
 
 
     def sign_in_to_main_page(self, account_data: Dict[str, str], main_url: str) -> None:
