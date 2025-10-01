@@ -82,7 +82,7 @@ class XxxListPage:
 
 
     # ------------------------------------ removals ------------------------------------
-    def clear_filters_in_N_form(self) -> None:
+    def clear_filters_in_n_form(self) -> None:
         self._logger.info("Form cleared using the Clear filters button")
         self.page.locator(".loader-wrapper").wait_for(state="hidden", timeout=10000)
         expect(self._clear_filters_button).to_be_visible(timeout=5000)
